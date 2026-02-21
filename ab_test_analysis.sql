@@ -4,8 +4,6 @@
 --  Author  : Odunayo Oyeboade
 --  Tools   : MS SQL Server (T-SQL) — SQL Server 2016+
 --
---  MySQL 8+ differences annotated inline with [MySQL]
---
 --  Dataset link:
 --  https://www.kaggle.com/datasets/zhangluyuan/ab-testing
 --
@@ -15,7 +13,7 @@
 --  than the existing page. The data team must rigorously
 --  validate the results before recommending a ship decision.
 --
---  ── SETUP ────────────────────────────────────────────────
+--  ── SETUP 
 --
 --  CREATE TABLE ab_test (
 --      user_id         INT,
@@ -29,10 +27,6 @@
 --  FROM 'C:\data\ab_data.csv'
 --  WITH (FORMAT='CSV', FIRSTROW=2, FIELDTERMINATOR=',',
 --        ROWTERMINATOR='\n', TABLOCK);
---
---  [MySQL]: LOAD DATA INFILE '/data/ab_data.csv'
---           INTO TABLE ab_test FIELDS TERMINATED BY ','
---           LINES TERMINATED BY '\n' IGNORE 1 ROWS;
 -- ============================================================
 
 
@@ -79,7 +73,6 @@ SELECT
     user_id,
     COUNT(DISTINCT group_name)                          AS group_count,
     STRING_AGG(CAST(group_name AS NVARCHAR(MAX)), ', ') AS groups_seen
-    -- [MySQL]: GROUP_CONCAT(group_name SEPARATOR ', ')
 FROM  ab_test
 GROUP BY user_id
 HAVING COUNT(DISTINCT group_name) > 1;
