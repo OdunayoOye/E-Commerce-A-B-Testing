@@ -8,7 +8,7 @@ This project performs a rigorous end-to-end A/B test analysis entirely in SQL ‚Ä
 
 ---
 
-## üóÇÔ∏è Dataset
+## Dataset
 
 | Field | Description |
 |---|---|
@@ -35,7 +35,7 @@ This project performs a rigorous end-to-end A/B test analysis entirely in SQL ‚Ä
 
 ---
 
-## üß† Advanced SQL Techniques Demonstrated
+## Advanced SQL Techniques Demonstrated
 
 - **ROW_NUMBER()** for deduplication and keeping the first valid record per user
 - **Two-proportion Z-test** implemented entirely in SQL using pooled proportions and standard error
@@ -49,7 +49,7 @@ This project performs a rigorous end-to-end A/B test analysis entirely in SQL ‚Ä
 
 ---
 
-## üí° Key Statistical Concepts Demonstrated
+## Key Statistical Concepts Demonstrated
 
 | Concept | Where Applied |
 |---|---|
@@ -62,10 +62,10 @@ This project performs a rigorous end-to-end A/B test analysis entirely in SQL ‚Ä
 
 ---
 
-## ‚ö†Ô∏è Important Note on the SQL Z-Test
+## Important Note on the SQL Z-Test
 
 The Z-test in Query 4 is a **SQL-native approximation** ‚Äî it provides correct directional results and is suitable for:
 - Exploratory analysis and stakeholder communication
 - Portfolio demonstration of statistical thinking
 
-For production ship decisions, always validate with **Python (scipy.stats.proportions_ztest)** or **R (prop.test)**. The README's companion note explains this context, demonstrating analytical maturity.
+For production ship decisions, always validate with **Python (scipy.stats.proportions_ztest)** or **R (prop.test)**. 
