@@ -1,18 +1,10 @@
-# E-commerce-A-B-Testing
-End-to-end A/B test analysis entirely in SQL
-
-# 🧪 A/B Test Results Analysis
-**Tools:** MS SQL Server (T-SQL) · MySQL 8+ Compatible · Statistical Analysis in SQL
-**Dataset:** [E-Commerce A/B Testing Dataset — Kaggle](https://www.kaggle.com/datasets/zhangluyuan/ab-testing)
-**Author:** Odunayo Oyeboade
+# A/B Test Results Analysis
 
 ---
 
 ## 📌 Project Overview
 
 This project performs a rigorous end-to-end A/B test analysis entirely in SQL — from data quality validation to statistical significance testing to business impact quantification. It demonstrates the ability to answer the most common product analytics question: *"Should we ship the new version?"*
-
-This project directly mirrors the A/B testing work demonstrated in the Vanguard Digital Experiment case study, translated into SQL form.
 
 ---
 
