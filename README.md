@@ -66,6 +66,6 @@ This project performs a rigorous end-to-end A/B test analysis entirely in SQL â€
 
 The Z-test in Query 4 is a **SQL-native approximation** â€” it provides correct directional results and is suitable for:
 - Exploratory analysis and stakeholder communication
-- Portfolio demonstration of statistical thinking
+- Practical demonstration of statistical thinking for a demo project
 
-For production ship decisions, always validate with **Python (scipy.stats.proportions_ztest)** or **R (prop.test)**. 
+For production ship decisions, please validate with **Python (scipy.stats.proportions_ztest)** or **R (prop.test)**. 
